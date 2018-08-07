@@ -7,12 +7,20 @@
 #include<time.h>
 #include<numeric>
 #include<iostream>
+#include <algorithm>
 //#include<fstream>
 
 
 #include "../common.h"
 #include "types.h"
 #include "calc.cpp"
+
+#define swap(x,y) do { \
+	typeof(x) tmp; \
+	tmp = x; \
+	x = y; \
+	y = tmp; \
+} while(0)
 
 double t1, t2, t3, t4, t5, t6, t7, t8, t9;
 int kernelCnt = 0;
@@ -21,18 +29,34 @@ int kernelCnt = 0;
 bool MDTAG = true;
 bool RDTAG = false;
 bool BDTAG = false;
+bool MMTAG = false;
 #endif
 
 #ifdef RD_MODE
 bool MDTAG = false;
 bool RDTAG = true;
 bool BDTAG = false;
+bool MMTAG = false;
 #endif
 
 #ifdef BD_MODE
 bool MDTAG = false;
 bool RDTAG = false;
 bool BDTAG = true;
+bool MMTAG = false;
+#endif
+
+#ifdef MT_MODE
+bool MDTAG = false;
+bool RDTAG = false;
+bool BDTAG = false;
+bool MMTAG = true;
+#endif
+
+#ifdef PER_THREAD
+bool per_thread_trace_h = true;
+#else
+bool per_thread_trace_h = false;
 #endif
 
 
@@ -83,10 +107,10 @@ double my_get_time(void)
 	struct timeval time;
 	if (gettimeofday(&time,NULL))
 	{
-        	//  Handle error
-        	return 0;
-    	}
-    	return (double)time.tv_sec + (double)time.tv_usec * .000001;
+		//  Handle error
+		return 0;
+	}
+	return (double)time.tv_sec + (double)time.tv_usec * .000001;
 }
 
 void measureKernel(int pos)
@@ -143,11 +167,11 @@ void recordMEvent(void* p, long bytes, int sline, int scolm)
 double get_time()
 {
 	struct timeval time;
-    	if (gettimeofday(&time,NULL)){
-        //  Handle error
-        	return 0;
-    	}
-    	return (double)time.tv_sec + (double)time.tv_usec * .000001;
+	if (gettimeofday(&time,NULL)){
+		//  Handle error
+		return 0;
+	}
+	return (double)time.tv_sec + (double)time.tv_usec * .000001;
 }
 
 void printea(void* p, int tag)
@@ -169,14 +193,14 @@ void printea(void* p, int tag)
 			printf("h: ERROR: NULL pointer!\n");
 			return;
 		}
-		
-                printf("h: rea: %p\n", *pp);
+
+		printf("h: rea: %p\n", *pp);
 		return;
 	}else
 	{
-	//	printf("h: ea: %p\n",p);
+		//	printf("h: ea: %p\n",p);
 		void** pp = (void**)p;
-                printf("h: rea: %p\n", *pp);
+		printf("h: rea: %p\n", *pp);
 		return;
 	}
 	return;
@@ -190,16 +214,16 @@ int getFuncID( void* p)
 	auto search = mfunc.find( fstr );
 	if (search == mfunc.end() ) //not found
 	{
-//		printf("not fouod\n");
+		//		printf("not fouod\n");
 		mfunc.insert( {fstr,  mfunc.size() } );
 		return mfunc.size()-1;
 	}
 	else
 	{
-//		printf("found \n");
+		//		printf("found \n");
 		return (int)search->second;
 	}
-//	mfunc.insert( {fstr, mfunc.size() } );
+	//	mfunc.insert( {fstr, mfunc.size() } );
 }
 
 
@@ -221,19 +245,19 @@ void updateCallStack(int caller, int callee, short sline, short scolm)
 		callStack.push_back( B );
 		return;
 	} 
-		
+
 	int p_caller = callStack[height-2].id;
 	int p_callee = callStack[height-1].id;
 
 	if ( p_caller == caller && p_callee == callee)
 	{	//repeated call
 		callStack[height-2].sline = sline;
-                callStack[height-2].scolm = scolm;
+		callStack[height-2].scolm = scolm;
 		return;
 	}
 	else if ( p_caller == caller && p_callee != callee)
 	{	//the same parent called a different function, simply update the callee
-	//	printf("same caller different callee\n");
+		//	printf("same caller different callee\n");
 		callStack[height-1].id = callee;
 		callStack[height-2].sline = sline;
 		callStack[height-2].scolm = scolm;
@@ -241,7 +265,7 @@ void updateCallStack(int caller, int callee, short sline, short scolm)
 	}
 	else if ( p_callee == caller)
 	{	// a typical call path
-//		printf("call squence\n");
+		//		printf("call squence\n");
 		callStack[height-1].sline = sline;
 		callStack[height-1].scolm = scolm;
 		CallSite_t A;
@@ -269,15 +293,15 @@ void updateCallStack(int caller, int callee, short sline, short scolm)
 	}
 
 	// the caller exists deeply in the stack	
-//	assert( (0==-1) && "!! undefined things happeened here\n");//TODO
-	
+	//	assert( (0==-1) && "!! undefined things happeened here\n");//TODO
+
 }	//end of updateCallStack()
 
 
 void printStack(void)
 {
 	int height = callStack.size();
-	
+
 	if (height<1)
 		return;
 
@@ -287,19 +311,19 @@ void printStack(void)
 
 void printErrStack(void)
 {
-        int height = callStack.size();
+	int height = callStack.size();
 
-        if (height<1)
-                return;
+	if (height<1)
+		return;
 
-        for (int i=0; i<height; i++)
-                fprintf(stderr," %d: call site: %d, (%d, %d)\n",i,  callStack[i].id,  callStack[i].sline,  callStack[i].scolm );
+	for (int i=0; i<height; i++)
+		fprintf(stderr," %d: call site: %d, (%d, %d)\n",i,  callStack[i].id,  callStack[i].sline,  callStack[i].scolm );
 }
 
 void callFunc(void* er, void* ee, int sline, int scolm)
 {
-        std::string caller = std::string((char*)er);
-        std::string callee = std::string((char*)ee);
+	std::string caller = std::string((char*)er);
+	std::string callee = std::string((char*)ee);
 
 	//std::cout<< " ID \t" <<  caller <<  " : " << getFuncID(er) << std::endl;
 	if ( caller.find("main") != std::string::npos )
@@ -307,15 +331,15 @@ void callFunc(void* er, void* ee, int sline, int scolm)
 
 	if ( ! ValidStack )
 		return;
-	
+
 	int caller_id = getFuncID(er);
 	int callee_id = getFuncID(ee);
 
 	if (false)
 	{
-	std::cerr << " \n <function> " << caller_id << " :" << caller << "   "<< sline << " " << scolm <<  std::endl;
-	std::cerr << " calls " << std::endl;
-	std::cerr << " <function> " << callee_id << " :" << callee << std::endl;
+		std::cerr << " \n <function> " << caller_id << " :" << caller << "   "<< sline << " " << scolm <<  std::endl;
+		std::cerr << " calls " << std::endl;
+		std::cerr << " <function> " << callee_id << " :" << callee << std::endl;
 	}
 
 	updateCallStack(caller_id, callee_id, (short) sline, (short) scolm);
@@ -324,7 +348,7 @@ void callFunc(void* er, void* ee, int sline, int scolm)
 	//printErrStack();
 	//printStack();
 
-//        printf("h: call Function: caller name: %s\n", str.str() );
+	//        printf("h: call Function: caller name: %s\n", str.str() );
 }
 
 void takeString(void* p, int action)
@@ -352,8 +376,8 @@ int* buffer_On_HoST;
 
 void mymalloc(int bytes)
 {
-	trace_On_HoST = (int*) malloc((long)TRACESIZE);
-	buffer_On_HoST = (int*) malloc((long)BUFFERSIZE);
+	trace_On_HoST = (int*) malloc((size_t)TRACESIZE);
+	buffer_On_HoST = (int*) malloc((size_t)BUFFERSIZE);
 }
 
 void* getHandle(int option)
@@ -364,7 +388,7 @@ void* getHandle(int option)
 	assert( option == 1 || option == 2);
 	assert( buffer_On_HoST != NULL &&  trace_On_HoST != NULL);
 
-//	printf("getHandle: pointers: %p\t %p\n", buffer_On_HoST, trace_On_HoST);
+	//	printf("getHandle: pointers: %p\t %p\n", buffer_On_HoST, trace_On_HoST);
 	if (option==1)
 	{
 		printf("getHandle: pointers: %p\n", buffer_On_HoST);
@@ -392,10 +416,21 @@ void dumpLines(void)
 	for(ii=0; ii< lines; ii++)
 		printf("h: PTR[%d] = %p\t", ii,  PTR[ii] );
 	printf("\n" );
-/*	const char* ss = "this is the end";
-	void *ps = ss;
-	takeString(ps);
-*/
+	/*	const char* ss = "this is the end";
+			void *ps = ss;
+			takeString(ps);
+	 */
+}
+
+bool cmp_f(const Entry_t& a, const Entry_t& b) {
+	if (a.bidx < b.bidx)
+		return true;
+	if (a.bidy < b.bidy)
+		return true;
+	if (a.tidx < b.tidx)
+		return true;
+	if (a.tidy < b.tidy)
+		return true;
 }
 
 void dumpTrace(void* itrace)
@@ -404,12 +439,12 @@ void dumpTrace(void* itrace)
 
 	printf(" Tool: about to dump this trace\n   ");
 	printf(" hhh: final dump: first few elements:   ");
-//	for (i = 0; i<10 ; i++)
-//		printf("%d\t", trace[i]);	
-//	printf("\n");	
-	
+	//	for (i = 0; i<10 ; i++)
+	//		printf("%d\t", trace[i]);	
+	//	printf("\n");	
+
 	Entry_t* tp = (Entry_t*) itrace;
-	
+
 	printf("%d\t", tp[0].bidx);
 	printf("%d\t", tp[0].tidx);
 	printf("%d\t", tp[0].bidy);
@@ -421,67 +456,52 @@ void dumpTrace(void* itrace)
 	printf("%d\t", tp[0].op);
 	printf("\n");
 
-        long length = (long) tp[0].ea; // number of entries 
-        short blockdimx = tp[0].bidx; // number of threads along block x-axis 
-        short blockdimy = tp[0].bidy; // number of threads along block y-axis
-        short griddimx = tp[0].tidx; // number of blocks along grid x-axis
-        short griddimy = tp[0].tidy; // number of blocks along grid y-axis
+	long length = (long) tp[0].ea; // number of entries 
+	short blockdimx = tp[0].bidx; // number of threads along block x-axis 
+	short blockdimy = tp[0].bidy; // number of threads along block y-axis
+	short griddimx = tp[0].tidx; // number of blocks along grid x-axis
+	short griddimy = tp[0].tidy; // number of blocks along grid y-axis
 	printf("blockDim.x: %d\n", blockdimx);
 	printf("blockDim.y: %d\n", blockdimy);		
 	printf("gridDim.x: %d\n", griddimx);		
 	printf("gridDim.y: %d\n", griddimy);		
 	printf("trace length: %ld\n", length);		
-	
+
 	int maxwarpid = 2000000;//TODO adaptive allocation
 	Trace_t* agg = (Trace_t*) calloc(maxwarpid, sizeof(Trace_t) );
 
 	t1 = get_time();
 
+	int my_maxwarpid = -1;
 	for (i=1; i<length; i++)
 	{
 		int tid = tp[i].tidy*blockdimx + tp[i].tidx;
-        	int bid = tp[i].bidy*griddimx + tp[i].bidx;
+		int bid = tp[i].bidy*griddimx + tp[i].bidx;
 		int warpsPerBlock = ceil( (double)(blockdimx*blockdimy)/32.0 ); 
-        	int warpid = bid* warpsPerBlock +  (blockdimx*tp[i].tidy + tp[i].tidx)/32;
-	
+		int warpid = bid* warpsPerBlock +  (blockdimx*tp[i].tidy + tp[i].tidx)/32;
+
 		if (CTATAG)
 			warpid = bid; //regroup traces for each CTA, instead of warp
-	//	printf(" bid %d=(%d,%d) \ttid %d=(%d,%d) \t%p\t%d,%d\t%d\n",bid, tp[i].bidx, tp[i].bidy, tid, tp[i].tidx, tp[i].tidy, tp[i].ea, tp[i].sline, tp[i].scolm, tp[i].op);
-		//dataAttribute(tp[i].ea);//DEBUG
+		if (my_maxwarpid < warpid)
+			my_maxwarpid = warpid;
 
 		if (warpid>maxwarpid)
 			printf(" bid %d=(%d,%d) \ttid %d=(%d,%d)\t%d \t-> %d \n",bid, tp[i].bidx, tp[i].bidy, tid, tp[i].tidx, tp[i].tidy,  warpsPerBlock, warpid );
 
-//		if (warpid%599==0)
-//	         	printf("%d: \t%d = (%d, %d)\t@ %p, %d bytes\n", tp[i].op,warpid,  tp[i].bidx, tp[i].tidx, tp[i].ea, tp[i].bytes);
-/*		if (false)
+		if (warpid > maxwarpid)
 		{
 			printf("I am in re alloc: %d, %d\n", warpid, maxwarpid );
-			Trace_t* newagg =  (Trace_t*) calloc(warpid, sizeof(Trace_t) );
-			memcpy( newagg, agg,  sizeof(Trace_t) * maxwarpid );
-			maxwarpid = warpid;
-			agg = newagg;
-			printf("I am out of re alloc: %d, %d\n", warpid, maxwarpid );
-		}
-*/
-		if (warpid > maxwarpid)
-                {
-                        printf("I am in re alloc: %d, %d\n", warpid, maxwarpid );
-                        agg = (Trace_t*) realloc(agg, warpid* sizeof(Trace_t) );
+			agg = (Trace_t*) realloc(agg, warpid* sizeof(Trace_t) );
 			if (agg==NULL)
 				printf("realloc() returns null...\n");
 			int j;
 			for (j=maxwarpid; j<warpid; j++)
 				agg[j].length=0;
 			maxwarpid = warpid;
-                        printf("I am out of re alloc: %d, %d\n", warpid, maxwarpid );
-                }
+			printf("I am out of re alloc: %d, %d\n", warpid, maxwarpid );
+		}
 
 		long cnt = agg[warpid].length;
-
-//		if ( cnt >1) //MERGE the consecutive accesses to the same location
-//			if (  agg[warpid].handle[cnt-1].ea ==  tp[i].ea && agg[warpid].handle[cnt-1].op == 1 && tp[i].op == 1   )
-//			continue;
 
 		if (cnt==0)
 		{
@@ -492,7 +512,7 @@ void dumpTrace(void* itrace)
 			agg[warpid].handle[0].bidx = warpid; //first entry is reserved for metadata
 			agg[warpid].handle[0].tidx = blockdimx;
 		}	
-	
+
 		agg[warpid].handle[cnt] = tp[i];
 		agg[warpid].length++;
 		agg[warpid].handle[0].ea = (void*)agg[warpid].length;
@@ -507,36 +527,62 @@ void dumpTrace(void* itrace)
 	}
 
 	t2 = get_time();
-/*	long ii;
-	int aa=1, bb=2, cc=3, dd=4;
-	Entry_t* tr = (Entry_t*) calloc( sizeof(Entry_t) , 20 );
-	tr[0].op = 19;
-	for (ii=1; ii<20; ii++)
-	{
-		tr[ii].op = 1;
-		if (ii<=10 || ii>=4)
-			tr[ii].ea = &aa;
-	}
+	// memory trace
+	if (MMTAG) {
+		unsigned long long wow = 0;
+		if (!per_thread_trace_h) {
+			FILE* fout = fopen("output_MM.txt", "w");
+			for (i = 0; i < length; i ++) {
+				Entry_t cur = tp[i];
+				fprintf(fout, "\tThread(%4d,%4d,%4d,%4d) accesses %p \n",
+						cur.bidx, cur.bidy, cur.tidx, cur.tidy, (void*)cur.ea);
+				fprintf (fout, "\t\t(%5hd bytes for %s operation, %d:%d)\n", cur.bytes, (cur.op == 1 ? "load" : "store"), cur.sline, cur.scolm);
+				wow ++;
+			}
+			fclose(fout);
+		} else {
+			int j;
+			for (i = 0; i < my_maxwarpid; i ++) {
+				char filename[40] = {0,};
+				sprintf (filename, "output_MM/warp_%04d.txt\0", i);
+				FILE* fout = fopen(filename, "w");
+				Entry_t* entries_per_warp = agg[i].handle;
+				std::stable_sort(&entries_per_warp[1], &entries_per_warp[agg[i].length], cmp_f);
+				int prev_gtid = -1;
+				for (j = 1; j < agg[i].length; j ++) {
+					wow ++;
+					Entry_t cur = entries_per_warp[j];
+					int tid = cur.tidy*blockdimx + cur.tidx;
+					int bid = cur.bidy*griddimx + cur.bidx;
+					int gtid = tid + bid * blockdimx * blockdimy;
+					if (prev_gtid != gtid)
+						fprintf(fout, "\nThread(%4d,%4d,%4d,%4d)\n", cur.bidx, cur.bidy, cur.tidx, cur.tidy);
+					fprintf (fout, "\t%p (%5hd bytes for %s operation, %d:%d)\n", (void*)cur.ea, cur.bytes, (cur.op == 1 ? "load" : "store"), cur.sline, cur.scolm);
+					prev_gtid = gtid;
+				}
+				fclose(fout);
+			}
+			/*char filename[40] = {0,};
+			for (i = 1; i < length; i ++) {
+				int tid = tp[i].tidy*blockdimx + tp[i].tidx;
+				int bid = tp[i].bidy*griddimx + tp[i].bidx;
+				int warpsPerBlock = ceil( (double)(blockdimx*blockdimy)/32.0 ); 
+				int warpid = bid* warpsPerBlock +  (blockdimx*tp[i].tidy + tp[i].tidx)/32;
 
-		tr[2].ea = &bb;
-		tr[3].ea = &cc;
-		tr[11].ea = &bb;
-		tr[12].ea = &dd;
-		tr[13].ea = &cc;
-		tr[14].ea = &aa;
-		tr[15].ea = &aa;
-		tr[16].ea = &bb;
-		tr[17].ea = &cc;
-		tr[18].ea = &bb;
-		tr[14].op = 2;
-		tr[17].op = 2;
-*/
+				Entry_t cur = tp[i];
+				sprintf(filename, "output_MM/warp_%04d.txt", warpid);
+				FILE* fout = fopen(filename, "a");
+				fprintf(fout, "\tThread(%4d,%4d,%4d,%4d) accesses %p \n",
+						cur.bidx, cur.bidy, cur.tidx, cur.tidy, (void*)cur.ea);
+				fprintf (fout, "\t\t(%5hd bytes for %s operation, %d:%d)\n", cur.bytes, (cur.op == 1 ? "load" : "store"), cur.sline, cur.scolm);
+				fclose(fout);*/
+		}
+		printf ("Total memory trace entries : %llu\n", wow);
+	}
 
 	t3 = get_time();
 	if (RDTAG)
 	{
-		//std::ofstream fout;
-		//fout.open("RD.output.txt");
 		FILE * fout; 	fout = fopen("output.RD.txt", "w");
 		std::vector<double> avg4kernel;
 		std::vector<double> avgX;
@@ -546,16 +592,16 @@ void dumpTrace(void* itrace)
 				continue;
 			printf(" \n%s id: %d\n",CTATAG? "CTA":"warp", i);
 			fprintf(fout, " \n%s id: %d\n",CTATAG? "CTA":"warp", i);
-			
+
 			double avgrd;	
 			double a = calcRD( (void*)agg[i].handle, avgrd, fout);
-			if( !isnan(a) )
+			if( !std::isnan(a) )
 				avg4kernel.push_back(a);
 
 			printf("return value :%f\n", avgrd);
 			fprintf(fout,"return value :%f\n", avgrd);
-			if( !isnan(avgrd) )
-                                avgX.push_back(avgrd);
+			if( !std::isnan(avgrd) )
+				avgX.push_back(avgrd);
 		}
 
 		printf("average RD of each %s in kernel\n", CTATAG ? "CTA":"warp");
@@ -566,7 +612,7 @@ void dumpTrace(void* itrace)
 			fprintf(fout, "%f\t", a);
 
 		}
-		
+
 		printf("\n");
 		printf("average RD of each %s in kernel %f\n", CTATAG ? "CTA":"warp", std::accumulate(avg4kernel.begin(), avg4kernel.end(), 0.0)/avg4kernel.size() );
 		printf("average RD of across whole execution %f\n", std::accumulate(avgX.begin(), avgX.end(), 0.0)/avgX.size() );
@@ -578,8 +624,7 @@ void dumpTrace(void* itrace)
 	}
 	t4 = get_time();	
 
-////
-//// Mem Divergence for each trace
+	//// Mem Divergence for each trace
 	if (MDTAG)
 	{
 		FILE * outfile;	outfile = fopen("output.MD.txt", "w");
@@ -615,9 +660,9 @@ void dumpTrace(void* itrace)
 		}
 		fclose(outfile);
 
-//		printf(" Tool: mem bins over all warps/CTAs.\n");
-//		for (i=1; i<= md_dist_length; i++)
-//			printf(" %ld\n",  MD_dist[i] );
+		//		printf(" Tool: mem bins over all warps/CTAs.\n");
+		//		for (i=1; i<= md_dist_length; i++)
+		//			printf(" %ld\n",  MD_dist[i] );
 
 		if (MEMDIV==NULL)
 		{
@@ -633,30 +678,22 @@ void dumpTrace(void* itrace)
 
 		for(i=1; i<=md_dist_length; i++)
 			MEMDIV[i] += MD_dist[i];
-		
+
 	}
-/*
-	printf(" Tool: I am satisfied with one kernel return.\n");
-	printf(" Tool stats:\n");
-	printf(" regrouping for-loop: \t%f s\n", t2-t1);
-	printf(" calc MD: \t%f s\n", t4-t3);
-	printf(" calculating for-loop: \t%f s\n", t6-t5);
-	printf(" all other in calc RD: \t%f s\n", t7-t6);
-*/
-//	exit(0);
+	//	exit(0);
 }
 
 void dumpStack(void* stack, long* rd, long* tag, int height)
 {
 	int i;
-        Entry_t* tp = (Entry_t*) stack;
+	Entry_t* tp = (Entry_t*) stack;
 
 	printf(" >>\n");
 	for (i=1; i<=height; i++)
 	{
 		if ( tag[i] == 0)
 			continue;
-	      	printf("i=%d: %d: \t(%d, %d)\t@ %p, %d bytes, tag: %ld\t\t%ld\n", i, tp[i].op,  tp[i].bidx, tp[i].tidx, tp[i].ea, tp[i].bytes, tag[i], rd[i]);
+		printf("i=%d: %d: \t(%d, %d)\t@ %p, %d bytes, tag: %ld\t\t%ld\n", i, tp[i].op,  tp[i].bidx, tp[i].tidx, tp[i].ea, tp[i].bytes, tag[i], rd[i]);
 	}
 	printf(" <<\n");
 }
@@ -680,17 +717,17 @@ void printContext(int id)
 void dumpBBlog(void* trace)
 {
 	BBlog_t* tp = (BBlog_t*) trace;
-        printf("h : I am in dumpBBlog()\n");
-        long length = tp[0].key; // number of entries
-        short blockdimx = tp[0].bidx; // number of threads along block x-axis
-        short blockdimy = tp[0].bidy; // number of threads along block y-axis
-        short griddimx = tp[0].tidx; // number of blocks along grid x-axis
-        short griddimy = tp[0].tidy; // number of blocks along grid y-axis
-        printf("blockDim.x: %d\n", blockdimx);
-        printf("blockDim.y: %d\n", blockdimy);
-        printf("gridDim.x: %d\n", griddimx);
-        printf("gridDim.y: %d\n", griddimy);
-        printf("trace length: %ld\n", length);
+	printf("h : I am in dumpBBlog()\n");
+	long length = tp[0].key; // number of entries
+	short blockdimx = tp[0].bidx; // number of threads along block x-axis
+	short blockdimy = tp[0].bidy; // number of threads along block y-axis
+	short griddimx = tp[0].tidx; // number of blocks along grid x-axis
+	short griddimy = tp[0].tidy; // number of blocks along grid y-axis
+	printf("blockDim.x: %d\n", blockdimx);
+	printf("blockDim.y: %d\n", blockdimy);
+	printf("gridDim.x: %d\n", griddimx);
+	printf("gridDim.y: %d\n", griddimy);
+	printf("trace length: %ld\n", length);
 
 	int maxwarpid = 2000000;//TODO adaptive allocation
 	BBTrace_t* agg = (BBTrace_t*) calloc(maxwarpid, sizeof(Trace_t) );
@@ -698,43 +735,43 @@ void dumpBBlog(void* trace)
 	for (int i=1; i<length; i++)
 	{
 		int tid = tp[i].tidy*blockdimx + tp[i].tidx;
-        	int bid = tp[i].bidy*griddimx + tp[i].bidx;
+		int bid = tp[i].bidy*griddimx + tp[i].bidx;
 		int warpsPerBlock = ceil( (double)(blockdimx*blockdimy)/32.0 ); 
-        	int warpid = bid* warpsPerBlock +  (blockdimx*tp[i].tidy + tp[i].tidx)/32;
-	
+		int warpid = bid* warpsPerBlock +  (blockdimx*tp[i].tidy + tp[i].tidx)/32;
+
 		//printf(" bid %d=(%d,%d) \ttid %d=(%d,%d) %d,%d, context id=%d\n",bid, tp[i].bidx, tp[i].bidy, tid, tp[i].tidx, tp[i].tidy, tp[i].sline, tp[i].scolm, tp[i].cid);
-                if ( tp[i].cid > -1)
+		if ( tp[i].cid > -1)
 		{
-		//	printf(" \nbid %d=(%d,%d) \ttid %d=(%d,%d) %d,%d, source loc= %d, %d, BB: ",bid, tp[i].bidx, tp[i].bidy, tid, tp[i].tidx, tp[i].tidy, tp[i].sline, tp[i].scolm, tp[i].sline, tp[i].scolm );
+			//	printf(" \nbid %d=(%d,%d) \ttid %d=(%d,%d) %d,%d, source loc= %d, %d, BB: ",bid, tp[i].bidx, tp[i].bidy, tid, tp[i].tidx, tp[i].tidy, tp[i].sline, tp[i].scolm, tp[i].sline, tp[i].scolm );
 			printBBname( tp[i].key);
 			printf("\n");
-                        printContext(tp[i].cid);//TODO//DEBUG
+			printContext(tp[i].cid);//TODO//DEBUG
 		}
 
 		if (warpid>maxwarpid)
 			printf(" bid %d=(%d,%d) \ttid %d=(%d,%d)\t%d \t-> %d \n",bid, tp[i].bidx, tp[i].bidy, tid, tp[i].tidx, tp[i].tidy,  warpsPerBlock, warpid );
 
-//		if (warpid%599==0)
-//	         	printf("%d: \t%d = (%d, %d)\t@ %p, %d bytes\n", tp[i].op,warpid,  tp[i].bidx, tp[i].tidx, tp[i].ea, tp[i].bytes);
-	
+		//		if (warpid%599==0)
+		//	         	printf("%d: \t%d = (%d, %d)\t@ %p, %d bytes\n", tp[i].op,warpid,  tp[i].bidx, tp[i].tidx, tp[i].ea, tp[i].bytes);
+
 		if (warpid > maxwarpid)
-                {
-                        printf("I am in re alloc: %d, %d\n", warpid, maxwarpid );
-                        agg = (BBTrace_t*) realloc(agg, warpid* sizeof(BBTrace_t) );
+		{
+			printf("I am in re alloc: %d, %d\n", warpid, maxwarpid );
+			agg = (BBTrace_t*) realloc(agg, warpid* sizeof(BBTrace_t) );
 			if (agg==NULL)
 				printf("realloc() returns null...\n");
 			int j;
 			for (j=maxwarpid; j<warpid; j++)
 				agg[j].length=0;
 			maxwarpid = warpid;
-                        printf("I am out of re alloc: %d, %d\n", warpid, maxwarpid );
-                }
+			printf("I am out of re alloc: %d, %d\n", warpid, maxwarpid );
+		}
 
 		long cnt = agg[warpid].length;
 
-//		if ( cnt >1) //MERGE the consecutive accesses to the same location
-//			if (  agg[warpid].handle[cnt-1].ea ==  tp[i].ea && agg[warpid].handle[cnt-1].op == 1 && tp[i].op == 1   )
-//			continue;
+		//		if ( cnt >1) //MERGE the consecutive accesses to the same location
+		//			if (  agg[warpid].handle[cnt-1].ea ==  tp[i].ea && agg[warpid].handle[cnt-1].op == 1 && tp[i].op == 1   )
+		//			continue;
 
 		if (cnt==0)
 		{
@@ -745,7 +782,7 @@ void dumpBBlog(void* trace)
 			agg[warpid].handle[0].bidx = warpid; //first entry is reserved for metadata
 			agg[warpid].handle[0].tidx = blockdimx;
 		}	
-	
+
 		agg[warpid].handle[cnt] = tp[i];
 		agg[warpid].length++;
 		agg[warpid].handle[0].key = agg[warpid].length;
@@ -760,34 +797,34 @@ void dumpBBlog(void* trace)
 	}
 
 
-        if (BDTAG)
-        {
-                std::vector<int> con_bb;
-                std::vector<int> div_bb;
-                for (int i=0; i<maxwarpid; i++)
-                {
-                        if ( agg[i].length==0)
-                                continue;
-                        printf(" \nwarp id: %d\n", i);
+	if (BDTAG)
+	{
+		std::vector<int> con_bb;
+		std::vector<int> div_bb;
+		for (int i=0; i<maxwarpid; i++)
+		{
+			if ( agg[i].length==0)
+				continue;
+			printf(" \nwarp id: %d\n", i);
 
 			int numBB_con = 0;
 			int numBB_div = 0;
-                        calcBD( (void*)agg[i].handle, numBB_con, numBB_div);
+			calcBD( (void*)agg[i].handle, numBB_con, numBB_div);
 
-                        if( !isnan(numBB_con) )
-                                con_bb.push_back(numBB_con);
+			if( !std::isnan(*((float*)&numBB_con)) )
+				con_bb.push_back(numBB_con);
 
-			if( !isnan(numBB_div) )
-                        	div_bb.push_back(numBB_div);
+			if( !std::isnan(*((float*)&numBB_div)) )
+				div_bb.push_back(numBB_div);
 
-                }
+		}
 
 		printf("\nTotal convergent BB: \t%d\n", std::accumulate( con_bb.begin(), con_bb.end(), 0) );
 		printf("Total divergent BB: \t%d\n", std::accumulate( div_bb.begin(), div_bb.end(), 0) );
 		printf("Total number of BB: \t%d\n", std::accumulate( div_bb.begin(), div_bb.end(), 0) +  std::accumulate( con_bb.begin(), con_bb.end(), 0) );
 
-                printf("\n");
-        }
+		printf("\n");
+	}
 }
 
 
@@ -797,34 +834,34 @@ void peelDics(void* trace)
 	unsigned long offset1 = ((UNIQUE_FUNC_DEVICE*FUNC_NAME_LEN*sizeof(char))/1024+1)*1024;
 	char* funcDicSeg = (char*)trace + BUFFERSIZE  - offset1;
 
-//	printf("peeling\n");
+	//	printf("peeling\n");
 
 	memcpy( funcDic, funcDicSeg, UNIQUE_FUNC_DEVICE*FUNC_NAME_LEN*sizeof(char) );
 
 	if (false)
-	for (int i=0; i<UNIQUE_FUNC_DEVICE; i++)
-	{
-		printf("%s\n", funcDic[i]);
-	}
+		for (int i=0; i<UNIQUE_FUNC_DEVICE; i++)
+		{
+			printf("%s\n", funcDic[i]);
+		}
 
-	
+
 	unsigned long offset2 = ((UNIQUE_FUNC_DEVICE* CALL_PATH_LEN_DEVICE* sizeof(CallSite_t))/1024+1)*1024 + offset1;
 	CallSite_t* contextDicSeg = (CallSite_t*) ((char*)trace + BUFFERSIZE  - offset2);
 	memcpy( contextDic, contextDicSeg, UNIQUE_FUNC_DEVICE* CALL_PATH_LEN_DEVICE*sizeof(CallSite_t) );
 
 	if (false)
-	for (int i=0; i< UNIQUE_FUNC_DEVICE; i++)
-	{
-		printf("next context i=%d\n",i);
-		for (int j=0; j< CALL_PATH_LEN_DEVICE ; j++)
-        	{
-			if (contextDic[i][j].id == -1)
-				break;
-                	printf("%d, %d, %d\n", contextDic[i][j].id, contextDic[i][j].sline, contextDic[i][j].scolm );
-        	}
-	
-	}
-//	printf("out of peel\n");
+		for (int i=0; i< UNIQUE_FUNC_DEVICE; i++)
+		{
+			printf("next context i=%d\n",i);
+			for (int j=0; j< CALL_PATH_LEN_DEVICE ; j++)
+			{
+				if (contextDic[i][j].id == -1)
+					break;
+				printf("%d, %d, %d\n", contextDic[i][j].id, contextDic[i][j].sline, contextDic[i][j].scolm );
+			}
+
+		}
+	//	printf("out of peel\n");
 }
 
 
@@ -840,30 +877,30 @@ void appendBBlog(void* trace, void* buffer)
 	unsigned long long length = tmpbb[0].key;
 	memcpy(trace , buffer, length*sizeof(BBlog_t) );
 
-/*	for (int i = 0; i<10 ; i++)
-	{
-		printf(" %d\t", tmpbb[i].bidx);
-		printf(" %d\t", tmpbb[i].bidy);
-		printf(" %d\t", tmpbb[i].tidx);
-		printf(" %d\t", tmpbb[i].tidy);
-		printf(" %llu\t", tmpbb[i].key);
-		printf(" %d\t", tmpbb[i].sline);
-		printf(" %d\t", tmpbb[i].scolm);
-		printf("\n");
-	}
-*/		
-		
+	/*	for (int i = 0; i<10 ; i++)
+			{
+			printf(" %d\t", tmpbb[i].bidx);
+			printf(" %d\t", tmpbb[i].bidy);
+			printf(" %d\t", tmpbb[i].tidx);
+			printf(" %d\t", tmpbb[i].tidy);
+			printf(" %llu\t", tmpbb[i].key);
+			printf(" %d\t", tmpbb[i].sline);
+			printf(" %d\t", tmpbb[i].scolm);
+			printf("\n");
+			}
+	 */		
+
 	dumpBBlog(trace);
 
 	//tpdst[0].tag  = traceOffset; //overwrite total length
 
-/*	int* ttmp = (int*)trace;
-	printf(" h: dst: appdend() first few elements:  \n");
-        for (i = 0; i<10 ; i++)
-                printf("%d\t", ttmp[i]);
-        printf("\n");
-*/
-//	if (kernelCnt == 4)
+	/*	int* ttmp = (int*)trace;
+			printf(" h: dst: appdend() first few elements:  \n");
+			for (i = 0; i<10 ; i++)
+			printf("%d\t", ttmp[i]);
+			printf("\n");
+	 */
+	//	if (kernelCnt == 4)
 
 }
 
@@ -878,7 +915,7 @@ void appendTrace(void* trace, void* buffer)
 	CNTappend++;
 	printf("I am %d append action.\n", CNTappend);
 
-	peelDics(buffer);
+	//peelDics(buffer);
 	printf(" h: src: appdend() first few elements, fresh off the GPU:  \n");
 	int* tmp = (int*) buffer;
 	for (int i = 0; i<10 ; i++)
@@ -889,6 +926,7 @@ void appendTrace(void* trace, void* buffer)
 	long length = (long)tpsrc[0].ea ; // number of entries 
 
 	//memcpy(trace /* + traceOffset*sizeof(Entry_t)*/, buffer+sizeof(Entry_t), (length-1)*sizeof(Entry_t) );	
+	printf ("%d\n", length);
 	memcpy(trace , buffer, length*sizeof(Entry_t) );
 	traceOffset = length -1 ;
 
@@ -896,15 +934,13 @@ void appendTrace(void* trace, void* buffer)
 	tpdst[0]  = tpsrc[0]; //copy in metadata
 	//tpdst[0].tag  = traceOffset; //overwrite total length
 
-/*	int* ttmp = (int*)trace;
-	printf(" h: dst: appdend() first few elements:  \n");
-        for (i = 0; i<10 ; i++)
-                printf("%d\t", ttmp[i]);
-        printf("\n");
-*/
+	/*	int* ttmp = (int*)trace;
+			printf(" h: dst: appdend() first few elements:  \n");
+			for (i = 0; i<10 ; i++)
+			printf("%d\t", ttmp[i]);
+			printf("\n");
+	 */
 	dumpTrace(trace);
-//	if (kernelCnt == 4)
-//		exit(0);
 }
 
 void print1()
@@ -914,19 +950,19 @@ void print1()
 
 void print2()
 {
-        printf("h: store\n");
+	printf("h: store\n");
 }
 
 void print3(int a)
 {
-        printf("h: print3: %d\n",a);
+	printf("h: print3: %d\n",a);
 }
 
 void print4(long a)
 {
-//        void* p = (void*) a;
+	//        void* p = (void*) a;
 	printf("h: long: %ld\n",a);
-//	printf("so: ea: %p\n",p);
+	//	printf("so: ea: %p\n",p);
 }
 
 void RetMain(void)
@@ -938,7 +974,7 @@ void RetMain(void)
 		FILE * outfile;
 		outfile = fopen("output.MD.txt","a");
 		fprintf(outfile, " Memory Divergence for whole execution\n" );
-		
+
 		for(int i=1; i<=MEMDIV_len; i++)
 		{
 			fprintf(outfile, " \t%d: \t%ld\n", i, MEMDIV[i]);
@@ -947,14 +983,16 @@ void RetMain(void)
 
 		fclose(outfile);
 	}
+	printf("h: Size of buffer = %llu MB\n", BUFFERSIZE >> 20);
+	printf("h: Size of trace = %llu MB\n", TRACESIZE >> 20);
 	printf("h: End of main() = %d\n", Counter4Main);
 	printf("h: # of convergent bb = %ld\n", con_whole);
 	printf("h: # of divergent bb = %ld\n", div_whole);
 	fprintf(stderr, "%f\n", totalElapsedTime);
 	printf("%f\n", totalElapsedTime);
 
-//	printf("End of main() = %d, BTW \n%p\n%p\n", Counter4Main, getHandle(1), getHandle(2));
-//	dumpLines();
+	//	printf("End of main() = %d, BTW \n%p\n%p\n", Counter4Main, getHandle(1), getHandle(2));
+	//	dumpLines();
 }
 
 

@@ -1,0 +1,33 @@
+OVERVIEW: llvm linker
+
+USAGE: llvm-link [options] <input bitcode files>
+
+OPTIONS:
+
+Color Options:
+
+  -color                                  - Use colors in output (default=autodetect)
+
+General options:
+
+  -disable-debug-info-type-map            - Don't use a uniquing type map for debug info
+  -disable-lazy-loading                   - Disable lazy module loading
+  -f                                      - Enable binary output on terminals
+  -import=<function:filename>             - Pair of function name and filename, where function should be imported from bitcode in filename
+  -import-all-index                       - Import all external functions in index.
+  -internalize                            - Internalize linked symbols
+  -internalize-public-api-file=<filename> - A file containing list of symbol names to preserve
+  -internalize-public-api-list=<list>     - A list of symbol names to preserve
+  -o=<filename>                           - Override output filename
+  -only-needed                            - Link only needed symbols
+  -override=<filename>                    - input bitcode file which can override previously defined symbol(s)
+  -summary-file=<string>                  - The summary file to use for function importing.
+  -summary-index=<filename>               - Module summary index filename
+  -suppress-warnings                      - Suppress all linking warnings
+  -v                                      - Print information about actions taken
+
+Generic Options:
+
+  -help                                   - Display available options (-help-hidden for more)
+  -help-list                              - Display list of available options (-help-list-hidden for more)
+  -version                                - Display the version of this program

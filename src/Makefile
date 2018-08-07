@@ -1,6 +1,7 @@
 all: sbsi
 
-DEBUG = -g 
+DEBUG = -g
+#DEBUG = -g 
 OPTAPP = -O0
 OPT = -O2 -std=c++11
 GC = g++ -std=c++11 #for unordered_map
@@ -13,15 +14,16 @@ CFLAGS = # -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include/ -std=c++11
 ANSF =$(UPATH)/ansf.cu
 HOST_SO =libprint.so
 
-#INSTRU = -instru-kernel-basic  -instru-kernel-memory
+#INSTRU = -instru-kernel-memory
+
+#INSTRU = -instru-kernel-sig -instru-kernel-basic  -instru-kernel-memory -constmerge
 #INSTRU = -instru-kernel-sig  -instru-kernel-basic -instru-kernel-call-path  -constmerge  
-#INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path -instru-kernel-memory -constmerge
+#INSTRU = -mem2reg -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path -instru-kernel-memory -constmerge
 INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path $(INSTRU_TASK) -constmerge
 #INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path -instru-kernel-branch -constmerge
 
 AUXSRC = 
-AUXOBJ =
-
+AUXOBJ = 
 $(PASS) : $(UPATH)/../LLVM_advisor.cpp $(UPATH)/../common.h
 	#cd  $(UPATH)/..; sh auto.sh;
 
@@ -89,10 +91,12 @@ host.bc: device.fatbin host.cui
 #	clang++ -cc1 $(OPT) -triple x86_64-unknown-linux-gnu -aux-triple nvptx64-nvidia-cuda -emit-llvm-bc -emit-llvm-uselists -disable-free -main-file-name $(SRC) -o host.bc -x cuda-cpp-output host.cui -fcuda-include-gpubinary device.fatbin	
 
 device.ptx: device.bc
-	llc device.bc -filetype=asm -o device.ptx
+	llc device.bc -filetype=asm -o device.ptx -debugger-tune=lldb -O2 -dwarf-version=1
+	python removeDebugInfo.py device.ptx
 
 device.o :  device.ptx
 	ptxas --gpu-name $(SM) device.ptx -o device.o -v -maxrregcount=31 #for verbose, resources check
+	#ptxas device.ptx -o device.o -v -maxrregcount=31 #for verbose, resources check
 
 device.fatbin: device.o host.cui 
 	fatbinary --cuda -64 --create device.fatbin --image=profile=$(SM),file=device.o --image=profile=$(CP),file=device.ptx  

@@ -50,10 +50,10 @@ device.bc instru: device.link.bc $(PASS)
 	opt -load $(PASS) $(INSTRU) < device.link.bc > device.bc
 
 clean: 
-	rm -f *.o *.bc *.ll *.s  native_ax* *.cubin *.ptx *.fatbin a.out *.cui *cudafe* *cpp*.i* *fatbin.c *module_id *.reg.c $(EXE) native clang
+	rm -f *.so *.o *.bc *.ll *.s  native_ax* *.cubin *.ptx *.fatbin a.out *.cui *cudafe* *cpp*.i* *fatbin.c *module_id *.reg.c $(EXE) native clang output_MM/*
 
 $(HOST_SO) : $(UPATH)/print.cpp  $(UPATH)/../common.h $(UPATH)/types.h $(UPATH)/calc.cpp
-	$(GC) -c $(DEBUG) $(OPT) -Wall -fPIC -D $(ANA_TASK) -lm -fopenmp $(UPATH)/print.cpp -o $(UPATH)/print.o
+	$(GC) -c $(DEBUG) $(OPT) -Wall -fPIC -D $(ANA_TASK) -D PER_THREAD -lm -fopenmp $(UPATH)/print.cpp -o $(UPATH)/print.o
 	$(GC) $(UPATH)/print.o -shared -o $(HOST_SO)
 
 wayin:
@@ -89,6 +89,7 @@ host.bc: device.fatbin host.cui
 
 device.ptx: device.bc
 	llc device.bc -filetype=asm -o device.ptx
+	python removeDebugInfo.py device.ptx
 
 device.o :  device.ptx
 	ptxas --gpu-name $(SM) device.ptx -o device.o -v #-maxrregcount=63 #for verbose, resources check
@@ -101,14 +102,14 @@ host.cui: $(SRC)
 	clang++ $(DEBUG) $(OPTAPP) $(CFLAGS) -c --cuda-host-only -emit-llvm $(SRC) -o host.clean.bc
 	clang++ $(DEBUG) $(OPTAPP) $(CFLAGS) -c -S --cuda-host-only -emit-llvm $(SRC) -o host.clean.ll
 
-device.clean.bc:  $(SRC)
-	clang++ $(DEBUG) $(OPTAPP) $(CFLAGS) -c --cuda-device-only -emit-llvm $(SRC) -o device.clean.bc
+device.clean.bc:  $(SRC) 
+	clang++ --cuda-gpu-arch=$(SM) $(DEBUG) $(OPTAPP) $(CFLAGS) -c --cuda-device-only -emit-llvm $(SRC) -o device.clean.bc
 
 ansf.bc :  $(ANSF) $(UPATH)/../common.h $(UPATH)/types.h
-	clang++ $(DEBUG) $(OPT) -c --cuda-device-only -emit-llvm $(ANSF) -o ansf.bc
+	clang++ --cuda-gpu-arch=$(SM) $(OPT) -c --cuda-device-only -emit-llvm $(ANSF) -o ansf.bc #-nocudainc -E -fno-builtin -fno-autolink -nobuiltininc -D__CLANG_CUDA_RUNTIME_WRAPPER_H__=1
 
 device.link.bc: device.clean.bc ansf.bc 
-	llvm-link device.clean.bc ansf.bc -o=device.link.bc
+	llvm-link device.clean.bc ansf.bc -o=device.link.bc 
 
 
 

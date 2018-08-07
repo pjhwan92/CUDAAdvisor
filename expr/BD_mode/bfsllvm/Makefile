@@ -1,6 +1,6 @@
 all: sbsi
 
-DEBUG = -g 
+DEBUG = 
 OPTAPP = -O2
 OPT = -O2 -std=c++11
 GC = g++ -std=c++11 #for unordered_map
@@ -14,17 +14,17 @@ EXE =bfs
 CFLAGS = # -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include/ -std=c++11
 ANSF =$(UPATH)/ansf.cu
 
-#INSTRU = -instru-kernel-basic  -instru-kernel-memory
+#INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-memory
 #INSTRU = -instru-kernel-sig  -instru-kernel-basic -instru-kernel-call-path  -constmerge  
-#INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path -instru-kernel-memory -constmerge
-INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path $(INSTRU_TASK) -constmerge
+INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path -instru-kernel-memory -constmerge
+#INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path $(INSTRU_TASK) -constmerge
 
 
 AUXSRC = 
 AUXOBJ =
 
 
-ll : device.clean.ll ansf.ll device.link.ll device.ll device.ll device.ll host.ll hosttmp.ll hosti.ll
+ll : device.clean.ll ansf.ll device.link.ll device.ll device.ll device.ll host.ll hosttmp.ll hosti.ll device.dwarf
 
 
 rsm: hosti.bc
@@ -89,10 +89,10 @@ host.bc: device.fatbin host.cui
 #	clang++ -cc1 $(OPT) -triple x86_64-unknown-linux-gnu -aux-triple nvptx64-nvidia-cuda -emit-llvm-bc -emit-llvm-uselists -disable-free -main-file-name $(SRC) -o host.bc -x cuda-cpp-output host.cui -fcuda-include-gpubinary device.fatbin	
 
 device.ptx: device.bc
-	llc device.bc -filetype=asm -o device.ptx
+	llc device.bc -filetype=asm -o device.ptx -split-dwarf-output="device.dwarf" -debugger-tune=lldb -O2
 
 device.o :  device.ptx
-	ptxas --gpu-name $(SM) device.ptx -o device.o -v #-maxrregcount=63 #for verbose, resources check
+	ptxas --gpu-name $(SM) device.ptx -o device.o -v -maxrregcount=63 #for verbose, resources check
 
 device.fatbin: device.o host.cui 
 	fatbinary --cuda -64 --create device.fatbin --image=profile=$(SM),file=device.o --image=profile=$(CP),file=device.ptx  

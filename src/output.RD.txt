@@ -1,0 +1,1965 @@
+ 
+warp id: 0
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 1
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 2
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 3
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 4
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 5
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 6
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 7
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 8
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 9
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 10
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 11
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 12
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 13
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 14
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 15
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 16
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 17
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 18
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 19
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 20
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 21
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 22
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 23
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 24
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 25
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 26
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 27
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 28
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 29
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 30
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 31
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 32
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 33
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 34
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 35
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 36
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 37
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 38
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 39
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 40
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 41
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 42
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 43
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 44
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 45
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 46
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 47
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 48
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 49
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 50
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 51
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 52
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.434389
+ average rd = 6.588793
+ max rd = 74
+ average bytes per access = 3.337931
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+696
+79
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.588793
+ 
+warp id: 53
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 54
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+ 
+warp id: 55
+ >>>>>
+number of unique elemnts of this warp: 77
+average RD of whole warp: 33.433509
+ average rd = 6.271382
+ max rd = 74
+ average bytes per access = 3.368421
+ number of bins: 9
+ bin distribution starts from
+0
+1
+2
+4
+8
+16
+32
+64
+-1
+ bin distribution: rd
+745
+78
+0
+0
+0
+0
+38
+99
+32
+unique addresses that are loaded:	 77 elements, a total of 300 bytes
+unique addresses that are stored:	 39 elements, a total of 156 bytes
+unique addresses that are loaded OR stored	 77 elements, a total of 300 bytes
+ <<<<<
+
+return value :6.271382
+average RD of each warp in kernel
+33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	33.434389	33.433509	33.433509	33.433509	
+average RD of each warp in kernel 33.433729
+average RD of across whole execution 6.350734
+

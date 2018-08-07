@@ -1,6 +1,6 @@
-SM =sm_35
-CP =compute_35
-LLVM = /home/dshen/llvm/
+SM =sm_60
+CP =compute_60
+LLVM = /home/jhpark/llvm/
 
-PASS =$(LLVM)/build/lib/LLVMCudaAdvisor.so
-UPATH =$(LLVM)/llvm/lib/Transforms/CUDAAdvisor/src/
+PASS =$(LLVM)/llvm-7.0/build/lib/LLVMCudaAdvisor.so
+UPATH =$(LLVM)/CUDAAdvisor/src/

@@ -159,6 +159,11 @@ void syr2kCuda(DATA_TYPE* A, DATA_TYPE* B, DATA_TYPE* C, DATA_TYPE* C_outputFrom
 	t_start = rtclock();
 	syr2k_kernel<<<grid,block>>>(A_gpu,B_gpu,C_gpu);
 	cudaThreadSynchronize();
+	cudaError_t err = cudaGetLastError();
+	if (err != cudaSuccess) {
+		printf ("CUDA error; %s\n", cudaGetErrorString(err));
+		exit(-1);
+	}
 	t_end = rtclock();
 	fprintf(stdout, "GPU Runtime: %0.6lf s\n", t_end - t_start);
 	fprintf(stderr, " %0.6lf\n", t_end - t_start);

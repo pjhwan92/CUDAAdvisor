@@ -1,7 +1,7 @@
 all: sbsi
 
-DEBUG = -g 
-OPTAPP = -O2
+DEBUG = 
+OPTAPP = -O0
 OPT = -O2 -std=c++11
 GC = g++ -std=c++11 #for unordered_map
 include ../../../env.mk
@@ -15,9 +15,9 @@ ANSF =$(UPATH)/ansf.cu
 
 #INSTRU = -instru-kernel-basic  -instru-kernel-memory
 #INSTRU = -instru-kernel-sig  -instru-kernel-basic -instru-kernel-call-path  -constmerge  
-#INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path -instru-kernel-memory -constmerge
+INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path -instru-kernel-memory -constmerge
 #INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path -instru-kernel-branch -constmerge
-INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path $(INSTRU_TASK) -constmerge
+#INSTRU = -instru-kernel-sig -instru-kernel-basic -instru-kernel-call-path $(INSTRU_TASK) -constmerge
 
 AUXSRC = 
 AUXOBJ =

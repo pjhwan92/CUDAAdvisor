@@ -1,0 +1,2530 @@
+Mem Divergence in this kernel
+ 
+warp id: 0
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 1
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 2
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 3
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 4
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 5
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 6
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 7
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 8
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 9
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 10
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 11
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 12
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 13
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 14
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 15
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 16
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 17
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 18
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 19
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 20
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 21
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 22
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 23
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 24
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 25
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 26
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 27
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 28
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 29
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 30
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 31
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 32
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 33
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 34
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 35
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 36
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 37
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 38
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 39
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 40
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 41
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 42
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 43
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 44
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 45
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 46
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 47
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 48
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 49
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 50
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 51
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 52
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 53
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 54
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 55
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 56
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 57
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 58
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 59
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 60
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 61
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 62
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ 
+warp id: 63
+ >>>>>
+trace length of this CTA: 1161
+number of memory access instructions: 31
+source code at  (52, 11, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 4, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 2, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (40, 1, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (32, 1, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (15, 9, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 21, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (29, 10, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (39, 29, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 40, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (47, 17, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (48, 14, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 26, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (37, 10, 1) 	accesses 1 cache Lines 	in 8 times, avg = 0.125000 
+source code at  (50, 13, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 15, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 11, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+source code at  (51, 33, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 16, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 13, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 18, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 33, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (52, 44, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (50, 24, 2) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (51, 35, 1) 	accesses 1 cache Lines 	in 32 times, avg = 0.031250 
+source code at  (39, 13, 1) 	accesses 1 cache Lines 	in 24 times, avg = 0.041667 
+some instructin accesses	1 cache line in this warp
+ <<<<<
+
+ Memory Divergence for whole execution
+ 	1: 	2693
+ 	2: 	0
+ 	3: 	0
+ 	4: 	0
+ 	5: 	0
+ 	6: 	0
+ 	7: 	0
+ 	8: 	0
+ 	9: 	0
+ 	10: 	0
+ 	11: 	0
+ 	12: 	0
+ 	13: 	0
+ 	14: 	0
+ 	15: 	0
+ 	16: 	0
+ 	17: 	0
+ 	18: 	0
+ 	19: 	0
+ 	20: 	0
+ 	21: 	0
+ 	22: 	0
+ 	23: 	0
+ 	24: 	0
+ 	25: 	0
+ 	26: 	0
+ 	27: 	0
+ 	28: 	0
+ 	29: 	0
+ 	30: 	0
+ 	31: 	0
+ 	32: 	0

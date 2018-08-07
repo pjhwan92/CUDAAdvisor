@@ -15,10 +15,10 @@ extern long con_whole;
 extern long div_whole;
 
 extern "C"{
-	double calcRD(void*, double& avgrd, FILE*);
-	double calcBD(void*, int& numBB_con, int& numBB_div);
-	long calcMD(void*, long *&memBins);
-	void printBBname( unsigned long long);
+double calcRD(void*, double& avgrd, FILE*);
+double calcBD(void*, int& numBB_con, int& numBB_div);
+long calcMD(void*, long *&memBins);
+void printBBname( unsigned long long);
 }
 
 
@@ -33,34 +33,34 @@ double calcBD(void* trace, int& numBB_con, int& numBB_div)
 	printf(" h: >>>>>\n");
 	BBlog_t* tp = (BBlog_t*) trace;
 
-//	if (tp[0].bidx == 0)
-//	int* trace = (int*) itrace;
-//	short* strace = (short*) itrace;
-//	long* ltrace = (long*) itrace;
-		
-//	if (tp[0].bidx == 0)
-//		printf(" h: final dump: first few elements:  \n");
-//	if (tp[0].bidx == 0)
-/*		for (i = 0; i<20 ; i++)
-		printf("%d\t", trace[i]);
-		printf("\n");	
-		
-		for (i = 0; i<20 ; i++)
-                printf("%d\t", strace[i]);
-		printf("\n");	
+	//	if (tp[0].bidx == 0)
+	//	int* trace = (int*) itrace;
+	//	short* strace = (short*) itrace;
+	//	long* ltrace = (long*) itrace;
 
-		for (i = 0; i<10 ; i++)
-                printf("%ld\t", ltrace[i]);
-		printf("\n");	
-*/	
+	//	if (tp[0].bidx == 0)
+	//		printf(" h: final dump: first few elements:  \n");
+	//	if (tp[0].bidx == 0)
+	/*		for (i = 0; i<20 ; i++)
+				printf("%d\t", trace[i]);
+				printf("\n");	
+
+				for (i = 0; i<20 ; i++)
+				printf("%d\t", strace[i]);
+				printf("\n");	
+
+				for (i = 0; i<10 ; i++)
+				printf("%ld\t", ltrace[i]);
+				printf("\n");	
+	 */	
 	long length = (long)(tp[0].key);// number of entries
 	printf("trace length of this CTA: %ld\n", length);
 
 	std::unordered_map< unsigned long long, std::vector<int> > bk2tk; // Key is branch key, Value a vector of thread IDs. 
 	std::unordered_map< unsigned long long, std::pair<int, int> > bk2cc; // Key is branch key, Value is source code location (cc is for code-centric). 
-	
-      	for (long i=1; i<length; i++)
-        { //TODO this is the bottleneck
+
+	for (long i=1; i<length; i++)
+	{ //TODO this is the bottleneck
 
 		int tkey = tp[i].tidx + tp[i].tidy*32; // this is a key for thread ID, not real id
 		unsigned long long bkey = tp[i].key;
@@ -77,23 +77,23 @@ double calcBD(void* trace, int& numBB_con, int& numBB_div)
 		}
 
 		auto pos1 = bk2cc.find(bkey);
-                if (pos1 ==  bk2cc.end())
-                {
-                        std::pair<int, int> tmp = {tp[i].sline, tp[i].scolm};
-                        bk2cc.insert( {bkey, tmp} );
-                }
-        }
+		if (pos1 ==  bk2cc.end())
+		{
+			std::pair<int, int> tmp = {tp[i].sline, tp[i].scolm};
+			bk2cc.insert( {bkey, tmp} );
+		}
+	}
 
 
 	numBB_con = 0;
 	numBB_div = 0;
-        for (const auto& iter : bk2tk)
+	for (const auto& iter : bk2tk)
 	{
 		unsigned long long tk = iter.first;
 
 		auto pos = bk2cc.find( iter.first);
 		unsigned long numThreads = iter.second.size(); // the number of threads that ever passed this Basic Block;
-		
+
 		if( numThreads%32 == 0 ) //TODO
 			numBB_con ++;
 		else
@@ -109,9 +109,9 @@ double calcBD(void* trace, int& numBB_con, int& numBB_div)
 	con_whole += numBB_con;
 	div_whole += numBB_div;	
 
-//	if (tp[0].bidx == 0)
-//	     	for (i=1; i<length; i++)
-//	         	printf("%d: \t(%d,%d) (%d,%d)\t@ %p of %ld, %d bytes, line %d, col %d \n", tp[i].op,  tp[i].bidx, tp[i].bidy, tp[i].tidx, tp[i].tidy, tp[i].ea, ((long)tp[i].ea)/CACHE_LINE_SIZE,  tp[i].bytes, tp[i].sline , tp[i].scolm);
+	//	if (tp[0].bidx == 0)
+	//	     	for (i=1; i<length; i++)
+	//	         	printf("%d: \t(%d,%d) (%d,%d)\t@ %p of %ld, %d bytes, line %d, col %d \n", tp[i].op,  tp[i].bidx, tp[i].bidy, tp[i].tidx, tp[i].tidy, tp[i].ea, ((long)tp[i].ea)/CACHE_LINE_SIZE,  tp[i].bytes, tp[i].sline , tp[i].scolm);
 
 
 	return 0.0;
@@ -122,13 +122,13 @@ void printBBname( unsigned long long tk)
 {
 	char str[30];
 	int i;
- 	for (i=0; tk>48 && i<30; i++)//the remaining in tk will be
+	for (i=0; tk>48 && i<30; i++)//the remaining in tk will be
 	{
-                //              printf("%llu -> %c\t", tk%(128-48)+48, tk%(128-48)+48);
-                        char tmp_ch = tk%(128-0)+0;
-        //              printf("%c", tmp_ch);
-                        tk = tk/(128-0);
-                        str[i] = tmp_ch;
+		//              printf("%llu -> %c\t", tk%(128-48)+48, tk%(128-48)+48);
+		char tmp_ch = tk%(128-0)+0;
+		//              printf("%c", tmp_ch);
+		tk = tk/(128-0);
+		str[i] = tmp_ch;
 	}
 
 	str[i] = '\0';
@@ -149,30 +149,30 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 	fprintf(fout, " >>>>>\n");
 	Entry_t* tp = (Entry_t*) itrace;
 
-//	if (tp[0].bidx == 0)
-//	int* trace = (int*) itrace;
-//	short* strace = (short*) itrace;
-//	long* ltrace = (long*) itrace;
-		
-//	if (tp[0].bidx == 0)
-//		printf(" h: final dump: first few elements:  \n");
-//	if (tp[0].bidx == 0)
-/*		for (i = 0; i<20 ; i++)
-		printf("%d\t", trace[i]);
-		printf("\n");	
-		
-		for (i = 0; i<20 ; i++)
-                printf("%d\t", strace[i]);
-		printf("\n");	
+	//	if (tp[0].bidx == 0)
+	//	int* trace = (int*) itrace;
+	//	short* strace = (short*) itrace;
+	//	long* ltrace = (long*) itrace;
 
-		for (i = 0; i<10 ; i++)
-                printf("%ld\t", ltrace[i]);
-		printf("\n");	
-*/	
+	//	if (tp[0].bidx == 0)
+	//		printf(" h: final dump: first few elements:  \n");
+	//	if (tp[0].bidx == 0)
+	/*		for (i = 0; i<20 ; i++)
+				printf("%d\t", trace[i]);
+				printf("\n");	
+
+				for (i = 0; i<20 ; i++)
+				printf("%d\t", strace[i]);
+				printf("\n");	
+
+				for (i = 0; i<10 ; i++)
+				printf("%ld\t", ltrace[i]);
+				printf("\n");	
+	 */	
 	long length = (long)(tp[0].ea);// number of entries
 	printf("trace length of this CTA: %ld\n", length);
 
-//	if (tp[0].bidx == 0)
+	//	if (tp[0].bidx == 0)
 	long* rd = (long*) calloc(sizeof(long), length);
 
 	std::unordered_map< void*, std::vector<long> > T4V; // Key is effective address, Value is a vector of reuse distance 
@@ -183,15 +183,15 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 
 	std::unordered_map< void*, long> mystack; //stack for RD computing
 	std::unordered_map< void*, long> streamStack; //stack for streaming counter
-	
+
 	// compute reuse distance
 	rd[1] = -1;
 	int streamCnt = 0;
-      	for (i=1; i<length; i++)
-        { //TODO this is the bottleneck
+	for (i=1; i<length; i++)
+	{ //TODO this is the bottleneck
 
 		auto pos = mystack.find(tp[i].ea);
-//         	printf("next entry: %d to %p\n", tp[i].op, tp[i].ea);
+		//         	printf("next entry: %d to %p\n", tp[i].op, tp[i].ea);
 		if(tp[i].op == 2 )
 		{
 			rd[i] = -2;//we don't care about writes
@@ -199,8 +199,8 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 			{
 				long prevLoc = pos -> second;
 				for ( auto &iter : mystack)
-                                        if ( iter.second > prevLoc)
-                                                iter.second--;
+					if ( iter.second > prevLoc)
+						iter.second--;
 
 				mystack.erase( pos ); // pop out if found, otherwise do nothing
 			}
@@ -231,14 +231,14 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 
 				rd[i] = currLoc - prevLoc - 1 ;
 
-//				assert( rd[i] >= -1);
-//				printf("%p found,  pre %d\t curr %d \n", tp[i].ea, prevLoc, currLoc);
+				//				assert( rd[i] >= -1);
+				//				printf("%p found,  pre %d\t curr %d \n", tp[i].ea, prevLoc, currLoc);
 				mystack.erase( pos);
 				mystack.insert( {tp[i].ea, mystack.size() } );
 
 				auto pos2 = streamStack.find( tp[i].ea );
-                        	if (pos2 != streamStack.end() )
-                                	pos2 -> second ++;
+				if (pos2 != streamStack.end() )
+					pos2 -> second ++;
 				else 
 					printf("undefined case\n");	
 			}
@@ -247,16 +247,16 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 		if(tp[i].op == 1 )
 			uniR.insert( {tp[i].ea, (long)tp[i].bytes} );//it will auto-merge duplicated keys, record the number of bytes 
 
-                if(tp[i].op == 2 )
-                        uniW.insert( {tp[i].ea, (long)tp[i].bytes} );//it will auto-merge duplicated keys, record the number of bytes
+		if(tp[i].op == 2 )
+			uniW.insert( {tp[i].ea, (long)tp[i].bytes} );//it will auto-merge duplicated keys, record the number of bytes
 
-  		uniRW.insert( {tp[i].ea, (long)tp[i].bytes} );//it will auto-merge duplicated keys, record the number of bytes
+		uniRW.insert( {tp[i].ea, (long)tp[i].bytes} );//it will auto-merge duplicated keys, record the number of bytes
 
-/////
-//         	printf("next entry: %d to %p, rd=%d\n", tp[i].op, tp[i].ea, rd[i]);
-//		for (const auto& el : mystack)
-//			printf("%p : %ld\n", el.first, el.second);
-//		dumpStack(tp, rd, tag, i);
+		/////
+		//         	printf("next entry: %d to %p, rd=%d\n", tp[i].op, tp[i].ea, rd[i]);
+		//		for (const auto& el : mystack)
+		//			printf("%p : %ld\n", el.first, el.second);
+		//		dumpStack(tp, rd, tag, i);
 
 		if(false)
 			if ( rd[i] <= 0 )// -1 or 0
@@ -282,11 +282,11 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 			T4V.insert( {tp[i].ea, temp } );
 		}
 
-        }
+	}
 
-//	if (tp[0].bidx == 0)
-//	     	for (i=1; i<length; i++)
-//	         	printf("%d: \t(%d,%d) (%d,%d)\t@ %p of %ld, %d bytes, line %d, col %d \n", tp[i].op,  tp[i].bidx, tp[i].bidy, tp[i].tidx, tp[i].tidy, tp[i].ea, ((long)tp[i].ea)/CACHE_LINE_SIZE,  tp[i].bytes, tp[i].sline , tp[i].scolm);
+	//	if (tp[0].bidx == 0)
+	//	     	for (i=1; i<length; i++)
+	//	         	printf("%d: \t(%d,%d) (%d,%d)\t@ %p of %ld, %d bytes, line %d, col %d \n", tp[i].op,  tp[i].bidx, tp[i].bidy, tp[i].tidx, tp[i].tidy, tp[i].ea, ((long)tp[i].ea)/CACHE_LINE_SIZE,  tp[i].bytes, tp[i].sline , tp[i].scolm);
 
 	std::vector<double> rdPerElement;//maintains average RD of each element
 	double sumOfWarp=0;
@@ -294,23 +294,23 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 	for (const auto& element : T4V)
 	{	
 		long sum4element=0;
-//			printf("element=%p:\t", element.first);
+		//			printf("element=%p:\t", element.first);
 		for(long rds : element.second)
 		{
-//			printf("%ld\t", rds);
+			//			printf("%ld\t", rds);
 			sum4element += rds;
 		}
 		double avg4element = (double)(sum4element)/element.second.size();
 		sumOfWarp += avg4element;
 		rdPerElement.push_back( avg4element );
-//			printf("\naverage RD : %f\n", avg4element);
+		//			printf("\naverage RD : %f\n", avg4element);
 	}			
 
 	printf("number of unique elemnts of this %s: %lu\naverage RD of whole %s: %f\n", CTATAG? "CTA":"warp", rdPerElement.size(), CTATAG? "CTA":"warp", sumOfWarp/(double)rdPerElement.size());
 	fprintf(fout, "number of unique elemnts of this %s: %lu\naverage RD of whole %s: %f\n", CTATAG? "CTA":"warp", rdPerElement.size(), CTATAG? "CTA":"warp", sumOfWarp/(double)rdPerElement.size());
 
-///
-///
+	///
+	///
 	long sumrd=0;
 	long maxrd=-1;
 	int cnt=0;
@@ -325,27 +325,27 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 	}
 
 	avgrd = (double)sumrd / cnt;
-        printf(" average rd = %f\n", avgrd);
-        fprintf(fout, " average rd = %f\n", avgrd);
-        printf(" max rd = %ld\n", maxrd);
-        fprintf(fout, " max rd = %ld\n", maxrd);
+	printf(" average rd = %f\n", avgrd);
+	fprintf(fout, " average rd = %f\n", avgrd);
+	printf(" max rd = %ld\n", maxrd);
+	fprintf(fout, " max rd = %ld\n", maxrd);
 
 	long sumbytes=0;
 	for (i=1; i<length; i++)
-        {
+	{
 		if ( rd[i] ==-1)
-                        continue;
+			continue;
 		sumbytes += tp[i].bytes;
 	}
-        printf(" average bytes per access = %f\n", ((double)sumbytes)/cnt);
-        fprintf(fout, " average bytes per access = %f\n", ((double)sumbytes)/cnt);
+	printf(" average bytes per access = %f\n", ((double)sumbytes)/cnt);
+	fprintf(fout, " average bytes per access = %f\n", ((double)sumbytes)/cnt);
 
-///
-/// distribution of reuse distance
+	///
+	/// distribution of reuse distance
 	int sizeDist = maxrd+2;
 	int* distb = (int*) calloc( sizeof(int) , sizeDist ); //you need one extra spot for "-1", at the tail
 	for (i=1; i<length; i++)
-        {
+	{
 		if (rd[i]>-1)
 			distb[rd[i]] ++;
 		else if (rd[i]==-1)
@@ -354,24 +354,24 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 			fprintf(stderr, "undefined rd value\n");
 	}
 
-/*//Du: output
-        printf(" distribution: rd value\n");
-	for(i=0; i < sizeDist; i++)
+	/*//Du: output
+		printf(" distribution: rd value\n");
+		for(i=0; i < sizeDist; i++)
 		if ( distb[i]>0)
-			if ( i==sizeDist-1)
-				printf("-1\n");
-			else
-				printf("%d\n", i);
-				
+		if ( i==sizeDist-1)
+		printf("-1\n");
+		else
+		printf("%d\n", i);
 
-	printf(" distribution: rd cnt\n");
-        for(i=0; i < sizeDist; i++)
-        {
-                if ( distb[i]>0)
-                        printf("%d\n", distb[i]);
 
-        }
-*/
+		printf(" distribution: rd cnt\n");
+		for(i=0; i < sizeDist; i++)
+		{
+		if ( distb[i]>0)
+		printf("%d\n", distb[i]);
+
+		}
+	 */
 
 	int bins;
 	if (maxrd==-1)
@@ -398,8 +398,8 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 		}
 	}
 
-        fprintf(fout, " number of bins: %d\n", bins);
-        fprintf(fout, " bin distribution starts from\n");
+	fprintf(fout, " number of bins: %d\n", bins);
+	fprintf(fout, " bin distribution starts from\n");
 	for (i=0; i<bins; i++)
 	{
 		if (i==0 && maxrd ==-1)
@@ -412,42 +412,42 @@ double calcRD(void* itrace, double &avgrd, FILE* fout)
 			fprintf(fout, "-1\n");
 	}
 
-        fprintf(fout, " bin distribution: rd\n");
-        for (i=0; i<bins-1; i++)
-                fprintf(fout, "%d\n", distbin[i]);
+	fprintf(fout, " bin distribution: rd\n");
+	for (i=0; i<bins-1; i++)
+		fprintf(fout, "%d\n", distbin[i]);
 
-//        printf(" infinity case: all -1 minus unique address: %d\n", distbin[bins-1] - T4V.size() );
-//        printf(" infinity case: all -1 minus unique read address: %d\n", distbin[bins-1] - uniR.size() );
+	//        printf(" infinity case: all -1 minus unique address: %d\n", distbin[bins-1] - T4V.size() );
+	//        printf(" infinity case: all -1 minus unique read address: %d\n", distbin[bins-1] - uniR.size() );
 
- //       printf(" streaming case: pre collected:  %d\n", streamCnt );
+	//       printf(" streaming case: pre collected:  %d\n", streamCnt );
 	for (const auto& iter : streamStack)
-        {
+	{
 		if( iter.second == 0)
 		{
-        	//	printf(" %p\n", iter.first);
+			//	printf(" %p\n", iter.first);
 			streamCnt ++;
 		}
 	}
-//        printf(" infinity case: streaming case: total: %d\n", streamCnt );
-        fprintf(fout, "%d\n", streamCnt );
+	//        printf(" infinity case: streaming case: total: %d\n", streamCnt );
+	fprintf(fout, "%d\n", streamCnt );
 
-//        printf(" unique read address:\n");
+	//        printf(" unique read address:\n");
 	long bytesR = 0, bytesW=0, bytesRW=0;
 	for (const auto& ele : uniR)
 		bytesR += ele.second;
-        for (const auto& ele : uniW)
-                bytesW += ele.second;
-        for (const auto& ele : uniRW)
-                bytesRW += ele.second;
+	for (const auto& ele : uniW)
+		bytesW += ele.second;
+	for (const auto& ele : uniRW)
+		bytesRW += ele.second;
 
 	fprintf(fout, "unique addresses that are loaded:\t %lu elements, a total of %ld bytes\n", uniR.size(), bytesR);
 	fprintf(fout, "unique addresses that are stored:\t %lu elements, a total of %ld bytes\n", uniW.size(), bytesW);
 	fprintf(fout, "unique addresses that are loaded OR stored\t %lu elements, a total of %ld bytes\n", uniRW.size(), bytesRW);
-//	printf("unique addresses that are RW-ed\t %lu, a total of %ld bytes\n", uniW.size()+uniR.size()-uniRW.size());
-        fprintf(fout, " <<<<<\n\n");
+	//	printf("unique addresses that are RW-ed\t %lu, a total of %ld bytes\n", uniW.size()+uniR.size()-uniRW.size());
+	fprintf(fout, " <<<<<\n\n");
 
 	return sumOfWarp/(double)rdPerElement.size();
-	
+
 } // end of calcRD()
 
 
@@ -459,7 +459,7 @@ long calcMD(void* itrace, long *&memBins, FILE* outfile)
 	printf(" h: >>>>>\n");
 	fprintf(outfile, " >>>>>\n");
 	Entry_t* tp = (Entry_t*) itrace;
-	
+
 
 	long length = (long)(tp[0].ea);// number of entries
 	int blockdimx = tp[0].tidx;
@@ -468,11 +468,11 @@ long calcMD(void* itrace, long *&memBins, FILE* outfile)
 	std::unordered_map< long, std::unordered_map<long, short> > cacheLines; // outer Key is a func(line, column), inner Key is cache line
 	std::unordered_map<long, int*> instCnts ; // outer Key is a func(line, column), value is a array of counters used to distinguish repeated iterations 
 
-      	for (i=1; i<length; i++)
-        {
+	for (i=1; i<length; i++)
+	{
 		if ( tp[i].op == 2)
 			continue;// we don't care about store access for MD 
-		
+
 		int tid =  (tp[i].tidy * blockdimx  + tp[i].tidx)%32;  //TODO//offset thread id
 
 		long srcloc = tp[i].sline*10000+tp[i].scolm;
@@ -492,7 +492,7 @@ long calcMD(void* itrace, long *&memBins, FILE* outfile)
 			iter=cnts[tid];
 		}
 
-     //    	printf("%d: \t(%d,%d) (%d,%d)\t@ %p of %ld, %d bytes, line %d, col %d , iter= %d\n", tp[i].op,  tp[i].bidx, tp[i].bidy, tp[i].tidx, tp[i].tidy, tp[i].ea, ((long)tp[i].ea)/CACHE_LINE_SIZE,  tp[i].bytes, tp[i].sline , tp[i].scolm, iter);
+		//    	printf("%d: \t(%d,%d) (%d,%d)\t@ %p of %ld, %d bytes, line %d, col %d , iter= %d\n", tp[i].op,  tp[i].bidx, tp[i].bidy, tp[i].tidx, tp[i].tidy, tp[i].ea, ((long)tp[i].ea)/CACHE_LINE_SIZE,  tp[i].bytes, tp[i].sline , tp[i].scolm, iter);
 		long ea =  (long) tp[i].ea;
 		long cl = (long)ea / CACHE_LINE_SIZE;
 		auto searchL = cacheLines.find( tp[i].sline*1e6+tp[i].scolm*1e4+iter); //MEM DIVERGENCE
@@ -511,11 +511,11 @@ long calcMD(void* itrace, long *&memBins, FILE* outfile)
 			else
 				searchc->second++; 
 		}
-        }
+	}
 
-//	if (tp[0].bidx == 0)
-//	     	for (i=1; i<length; i++)
-//	         	printf("%d: \t(%d,%d) (%d,%d)\t@ %p of %ld, %d bytes, line %d, col %d \n", tp[i].op,  tp[i].bidx, tp[i].bidy, tp[i].tidx, tp[i].tidy, tp[i].ea, ((long)tp[i].ea)/CACHE_LINE_SIZE,  tp[i].bytes, tp[i].sline , tp[i].scolm);
+	//	if (tp[0].bidx == 0)
+	//	     	for (i=1; i<length; i++)
+	//	         	printf("%d: \t(%d,%d) (%d,%d)\t@ %p of %ld, %d bytes, line %d, col %d \n", tp[i].op,  tp[i].bidx, tp[i].bidy, tp[i].tidx, tp[i].tidy, tp[i].ea, ((long)tp[i].ea)/CACHE_LINE_SIZE,  tp[i].bytes, tp[i].sline , tp[i].scolm);
 
 	fprintf(outfile, "number of memory access instructions: %lu\n", cacheLines.size());
 
@@ -530,7 +530,7 @@ long calcMD(void* itrace, long *&memBins, FILE* outfile)
 			localcnt++;
 		}
 		if ( maxCL < inst.second.size() )
-    			maxCL = inst.second.size();
+			maxCL = inst.second.size();
 		fprintf(outfile, "source code at  (%ld, %ld, %ld) \taccesses %lu cache Lines \tin %ld times, avg = %f \n", 
 				inst.first/1000000, 
 				(inst.first%(1000000))/10000, 
@@ -544,17 +544,17 @@ long calcMD(void* itrace, long *&memBins, FILE* outfile)
 
 	memBins = (long*) calloc( sizeof(long) , maxCL+1);
 	for (const auto& inst : cacheLines)
-        {
+	{
 		int tmp = inst.second.size();
 		memBins[tmp] ++;
 	}
 
-//	unsigned ii;
-//	for (ii=1; ii <= maxCL; ii++)
-//		printf("%d: %ld\n", ii, memBins[ii]);
+	//	unsigned ii;
+	//	for (ii=1; ii <= maxCL; ii++)
+	//		printf("%d: %ld\n", ii, memBins[ii]);
 
-        printf(" <<<<<\n\n");
-        fprintf(outfile, " <<<<<\n\n");
+	printf(" <<<<<\n\n");
+	fprintf(outfile, " <<<<<\n\n");
 	return maxCL;
 } // end of calcMD()
 

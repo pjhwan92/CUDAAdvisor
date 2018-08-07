@@ -12,8 +12,8 @@
 typedef struct MallocEvent_t{
 	void* ea;
 	long bytes;        
-        short sline;
-        short scolm;
+	short sline;
+	short scolm;
 } MallocEvent_t;
 
 
@@ -25,27 +25,27 @@ typedef struct CallSite_t{
 
 
 typedef struct Entry_t{
-        short bidx;
+	short bidx;
 	short bidy;
-        short tidx;
-        short tidy;
-        void* ea;
-        short bytes;
+	short tidx;
+	short tidy;
+	void* ea;
+	short bytes;
 	short sline; //source line
 	short scolm; //source coln
 	short op;  //1 for load, 2 for store
 }  Entry_t;
 
 typedef struct BBlog_t{
-        short bidx;
-        short bidy;
-        short tidx;
-        short tidy;
-        unsigned long long key; //I just cant understand
+	short bidx;
+	short bidy;
+	short tidx;
+	short tidy;
+	unsigned long long key; //I just cant understand
 	int sline; //source line
-        int scolm; //source coln
-        int cid; 	//context id
-//DO NOT change the order of fields 
+	int scolm; //source coln
+	int cid; 	//context id
+	//DO NOT change the order of fields 
 }  BBlog_t;
 
 
@@ -57,9 +57,9 @@ typedef struct Trace_t{
 
 
 typedef struct BBTrace_t{
-        long length;
-        int capacity; //for dynamically adjusting length
-        BBlog_t* handle;
+	long length;
+	int capacity; //for dynamically adjusting length
+	BBlog_t* handle;
 } BBTrace_t;
 
 

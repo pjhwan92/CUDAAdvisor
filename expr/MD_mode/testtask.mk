@@ -1,4 +1,4 @@
-HOST_SO = ../libprint.so
+HOST_SO = libprint.so
 
 # Reuse Distance 
 #INSTRU_TASK = -instru-kernel-memory
@@ -9,5 +9,5 @@ HOST_SO = ../libprint.so
 #ANA_TASK = MD_MODE
 
 # Branch Divergence
-INSTRU_TASK = -instru-kernel-branch
-ANA_TASK = BD_MODE
+INSTRU_TASK = -instru-kernel-memory
+ANA_TASK = MT_MODE
