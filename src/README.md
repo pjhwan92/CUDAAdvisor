@@ -6,7 +6,7 @@ To do so, you have to concern about few things.
 1. src/ansf.cu implements some functions that helps to generate the source data.
     - print5() function is invoked right before ld/st instruction issued.
     This function transfers some source data to storeLines() function which stores them in the profiling buffer.
-    - RetKernel() function is invoked when kernel defined as __global__ is ended up.
+    - RetKernel() function is invoked when kernel defined as \_\_global\_\_ is ended up.
     This function stores the metadata used by specific host function.
 2. src/print.cpp has host printer functions.
     - dumpTrace() function which is invoked by appendTrace() write profile data into file.
@@ -15,4 +15,4 @@ To do so, you have to concern about few things.
     - You should modify the data structures f you want to get other types of profile data.
 
 ## Compile the application
-See the example source code under src or expr/MD_MODE/nnllvm, and also the Makefiles file under the directories.
+See the example source code under src or expr/MD\_MODE/nnllvm, and also the Makefiles file under the directories.
