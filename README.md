@@ -7,7 +7,7 @@ CUDAAdvisor is a profiling tool for GPU.
  
 ## Software Depebdencies
   - LLVM 4.0 or later
-  - CUDA 7.0 or later
+  - CUDA 7.0 or later (not capable with CUDA 9.x)
   - cmake 3.4.3 or later
 
 ## Installation
